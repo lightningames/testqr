@@ -4,6 +4,8 @@ test repo for embedding logo into QR image and color, format customization
 
 ## TODO
 
+NOTE: this is a sub repo in a larger project. Lets see if we can get one method transitioned to the new way of doing things. 
+
 - remove dependency on rsvg-convert
 - remove dependency on templates
 - migrate method in template_test.py to svgwrite as in sample_code.py 

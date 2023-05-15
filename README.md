@@ -1,54 +1,31 @@
-# testqr
+# QRimgtest
 
 test repo for embedding logo into QR image and color, format customization
+- This repository is a sub repo of a larger project, called https://laisee.org
 
-## TODO
 
-NOTE: this is a sub repo in a larger project. Lets see if we can get one method transitioned to the new way of doing things. 
+## README:
 
-- remove dependency on templates
-- migrate method in template_test.py to svgwrite as it is used in sample_code.py 
-- remove dependency on rsvg-convert, try to find some other way to write SVG to PNG without writing to disk. 
+- Update your Template background and colors in the **config.yml file**
+- The old method is using template_test.py (ignore this, its in the 2021 folder)
 
-## how to run
 
-rsvg-convert  -  to be deprecated, install unbuntu: 
+## New method (2023) - how to run
 
 ```
-sudo apt install librsvg2-bin
-sudo apt-get rsvg-convert
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python3 template_refactor_2023.py
 ```
 
 Requires at least python3.8
 
-```
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-python3 template_test.py 
-```
-
-- change colors in template_test.py
-
-- EDIT SVG TEMPLATE FILE to refer to qr_code, idnumber, expires and sats
-with {{ }}, For example: 
-
-```<image
-         width="166.29921"
-         height="166.51379"
-         preserveAspectRatio="none"
-         href={{qrcode}}
-         id="image4277"
-         x="811.72894"
-         y="208.38103" />
-```
-
 ## Result
 
-Final image after QR code and background SVG image are merged together in a PNG should look like image below. 
+Final image after QR code and background SVG image are merged together in a PNG should look like this image below. 
 IMPORTANT: The final image MUST be in PNG format, it cannot be in SVG. 
 
-Example: 
-https://user-images.githubusercontent.com/73979971/230754313-1fef33c2-37b9-4d6f-ba5d-ea0b0e6cef50.jpeg
+![finalimage](https://github.com/bitkarrot/QRimgtest/blob/main/outputf7bsdfoijlijljs.png)
 
 

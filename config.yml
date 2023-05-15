@@ -1,0 +1,39 @@
+# This must be a SVG file of dimensions 600px by 1172px
+template_name: "templates/rabbit.png"
+
+# Set the X and Y coordinates for the QR code
+# all components are relative to starting point
+# the qr_offset is how far away from the border the QR code is
+qr_x: 190
+qr_y:  680
+width: 235
+height: 310
+qr_offset: 15
+
+# qr colors
+qr_fill_color: "black"
+qr_back_color: "white"
+
+# box around qr code and values
+box_stroke_color: "#FF0000"
+box_fill_color: "#FFFFFF"
+
+# text stroke color
+text_stroke_color: "#000000"
+text_fill_color: "#000000"
+
+# qr box size
+qr_box_size: 6
+qr_border: 1
+
+# Sats content
+sats_font: "fonts/DMMono-Regular.ttf"
+sats_font_size: 30
+sats_vertical_offset: 220
+# sats_horizontal_offset: is qr_offset
+
+# Expires and ID content
+other_font: "fonts/DMMono-Regular.ttf"
+other_font_size: 15
+other_vertical_offset: 260
+# other_horizontal_offset: is qr_offset
